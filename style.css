@@ -5,7 +5,7 @@ body{
 .page{
 	display: flex;
 	flex-direction: column;
-	min-height: 130vh;
+	min-height: 330vh;
 }
 .main{
 	width: 90%;
@@ -16,7 +16,6 @@ body{
 	float: left;
     width: 17%;
     height: 200px;
-    border: 2px black solid;
     border-radius: 5%;
     margin:50px 0 0 12.25% ;
     background-color: #FF962D;
@@ -26,6 +25,7 @@ body{
 }
 .main div:hover{
 	color: #EC0000;
+	cursor: pointer;
 }
 .main div img{
 	width: 70px;
@@ -38,7 +38,7 @@ body{
 }
 .footer{
 	height: 40px;
-	background-color: black;
+	background-color: #FF962D;
 	margin-top: auto;
 	color: white;
 	text-align: center;
@@ -70,7 +70,7 @@ body{
     color: white; 
     padding-top: 10px;
 }
-.header_d a:hover{
+.header_d a:active{
 	color: #EC0000;
 	opacity: 0.8;
 	margin-top: 0;	
@@ -92,4 +92,8 @@ body{
 .header_d div p{
 	margin-top: 2px;	
 }
-
+@media screen and (max-width: 800px){
+	.main div{
+		color: black;
+	}
+}
