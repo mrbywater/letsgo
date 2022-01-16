@@ -1,35 +1,43 @@
 body{
    margin: 0;
-   font-family: "PT Sans", "Arial", sans-serif;
+   font-family: 'Nunito', sans-serif;
+   height: 100%;
 }
 .page{
 	display: flex;
 	flex-direction: column;
-	min-height: 330vh;
+	min-height: 100%;
 }
 .main{
 	width: 90%;
 	margin: 0px 0 0px 5%;
-	height: 650px;
+	min-height: 650px;
+	height: 100%;
+	flex-grow: 1;
 }
-.main div{
+.sqr{
+	width: 100%;
+}
+.main .sqr div{
 	float: left;
     width: 17%;
     height: 200px;
     border-radius: 5%;
+    border:2px #EC0000 solid;
     margin:50px 0 0 12.25% ;
     background-color: #FF962D;
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
     color: white;
 }
 .main div:hover{
 	color: #EC0000;
 	cursor: pointer;
 }
-.main div img{
+.main .sqr div img{
 	width: 70px;
 	border-radius: 100%;
+	border:2px #EC0000 solid;
 	margin: 35px 0 0 0;		
 }
 .header{
@@ -39,17 +47,17 @@ body{
 .footer{
 	height: 40px;
 	background-color: #FF962D;
-	margin-top: auto;
 	color: white;
 	text-align: center;
 	padding-top: 20px;
+	margin-top: 50px;
 }
 .logo{
 	float: left;
 	width: 10%;			
 }
 .logo img{
-	margin: 10px 0 0 25px;
+	margin: 14px 0 0 40px;
 }
 .header p div{
 	float: left;
@@ -92,8 +100,29 @@ body{
 .header_d div p{
 	margin-top: 2px;	
 }
-@media screen and (max-width: 800px){
-	.main div{
-		color: black;
-	}
+.back{	
+	position: absolute;	
+	margin: 0 0 0 89%;
 }
+.back img{
+	width: 30px;
+	border-radius: 100%;  
+    border:1px black solid;
+}
+@media screen and (max-width: 800px){
+	.main .sqr div{
+		width: 25%;
+		margin: 30px 0 0 6.25%;
+	}
+	.header div img {
+    	width: 50px;  
+    }
+    .header_d div img {
+   		width: 40px;
+   		height: 40px;
+	}
+   .logo img {
+    	margin: 20px 0 0 14px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
