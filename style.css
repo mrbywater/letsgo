@@ -1,8 +1,13 @@
+
+
 body{
    margin: 0;
    font-family: 'Nunito', sans-serif;
    height: 100%;
 }
+
+/*соорудить костяк (header, main, footer) без использования flex*/
+
 .page{
 	display: flex;
 	flex-direction: column;
@@ -10,9 +15,17 @@ body{
 }
 .main{
 	width: 90%;
+	/*
+		зачем тут то есть px, то нет?
+		использовать вариант короткой записи свойства margin
+		(у нас три нуля, зачем их писать несколько раз?)
+		http://htmlbook.ru/css/margin - смотри здесь,
+		заодно надо выучить правила краткой записи
+	*/
 	margin: 0px 0 0px 5%;
 	min-height: 650px;
 	height: 100%;
+ 	/*пока убираем флекс*/
 	flex-grow: 1;
 }
 .sqr{
@@ -32,6 +45,7 @@ body{
 }
 .main div:hover{
 	color: #EC0000;
+	/*зачем назначать этот стиль при :hover, если можно присудить на постоянной основе?*/
 	cursor: pointer;
 }
 .main .sqr div img{
@@ -59,30 +73,50 @@ body{
 .logo img{
 	margin: 14px 0 0 40px;
 }
+
+/*для какого элемента этот блок стилей? :)?*/
 .header p div{
 	float: left;
 	width: 50px;	
+	background: green !important;
 }
+/*для какого элемента этот блок стилей? :)?*/
+
+/*
+ этот стиль применим для всех img, которые существуют внутри тегов div,
+ которые в свою очередь лежат внутри тега с классом .header, а потом перезаписываются ниже
+ .header_d div img тут
+ так и должно быть или кто-то неправильно использовал селектор?)
+ еще раз смотрим:
+	http://htmlbook.ru/samcss/kontekstnye-selektory
+	http://htmlbook.ru/samcss/dochernie-selektory
+	http://htmlbook.ru/samcss/sosednie-selektory
+ ;
+ */
 .header div img{
 	width: 70px;
     border-radius: 100%;
 }
+
 .header_d{
 	float: left;
 	width: 90%; 
 	text-align: center;   
 }
+
 .header_d a{
 	text-decoration: none;
 	font-size: 25px;
     color: white; 
     padding-top: 10px;
 }
+
 .header_d a:active{
 	color: #EC0000;
 	opacity: 0.8;
 	margin-top: 0;	
 }
+
 .header_d div{
 	float: left;
 	width: 33.33333%;
@@ -90,25 +124,34 @@ body{
 	height: 90px;
 	padding-top: 10px;		
 }
+
 .header_d div:hover{
 	background-color: #FFAA5A;	
 }
+
 .header_d div img{
 	width: 40px;
 	height: 40px;		
 }
+
 .header_d div p{
 	margin-top: 2px;	
 }
+
 .back{	
 	position: absolute;	
+	/*не margin, позиционируем корректным методом http://htmlbook.ru/css/position */
 	margin: 0 0 0 89%;
 }
+
+/*стрелку делаем не картинкой, подключаем font awesome*/
 .back img{
 	width: 30px;
 	border-radius: 100%;  
     border:1px black solid;
 }
+
+/*https://itchief.ru/html-and-css/media-queries#what-is*/
 @media screen and (max-width: 800px){
 	.main .sqr div{
 		width: 25%;
@@ -125,4 +168,6 @@ body{
     	margin: 20px 0 0 14px;
     }
 }
+
+/*все импорты должны быть на верху страницы, не внизу */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
