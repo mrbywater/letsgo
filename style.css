@@ -1,24 +1,22 @@
-body{
-   margin: 0;
-   font-family: 'Nunito', sans-serif;
-   height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif; 
 }
-.page{
-	display: flex;
-	flex-direction: column;
+html,
+body{  
+    height: 185%;
+}
+.page{	
 	min-height: 100%;
 }
 .main{
 	width: 90%;
-	margin: 0px 0 0px 5%;
-	min-height: 650px;
-	height: 100%;
-	flex-grow: 1;
+	margin: 0 0 0 5%;	
+	padding-bottom: 40px;
 }
-.sqr{
-	width: 100%;
-}
-.main .sqr div{
+.main div{	
 	float: left;
     width: 17%;
     height: 200px;
@@ -29,28 +27,28 @@ body{
     text-align: center;
     font-size: 23px;
     color: white;
+    cursor: pointer;
 }
 .main div:hover{
-	color: #EC0000;
-	cursor: pointer;
+	color: #EC0000;	
 }
-.main .sqr div img{
+.main div img{
 	width: 70px;
 	border-radius: 100%;
 	border:2px #EC0000 solid;
-	margin: 35px 0 0 0;		
+	margin: 35px 0 20px 0;		
 }
-.header{
+header{
 	height: 100px;
 	background-color: #FF962D;	
 }
-.footer{
+footer{
 	height: 40px;
-	background-color: #FF962D;
+    background-color: #FF962D;
 	color: white;
 	text-align: center;
 	padding-top: 20px;
-	margin-top: 50px;
+	margin-top: -40px;
 }
 .logo{
 	float: left;
@@ -58,13 +56,9 @@ body{
 }
 .logo img{
 	margin: 14px 0 0 40px;
-}
-.header p div{
-	float: left;
-	width: 50px;	
-}
-.header div img{
 	width: 70px;
+}
+header div img{	
     border-radius: 100%;
 }
 .header_d{
@@ -85,8 +79,7 @@ body{
 }
 .header_d div{
 	float: left;
-	width: 33.33333%;
-	text-align: center;
+	width: 33.33333%;	
 	height: 90px;
 	padding-top: 10px;		
 }
@@ -97,24 +90,32 @@ body{
 	width: 40px;
 	height: 40px;		
 }
-.header_d div p{
-	margin-top: 2px;	
+#back{	
+	background-color: white;
+    position: absolute;
+    left: 80%;
+    border-radius: 100%;
+    border:2px grey solid;
+    width: 35px;
+    padding-top: 4px;    
+    height: 31px;
 }
-.back{	
-	position: absolute;	
-	margin: 0 0 0 89%;
+#back i{
+	color: grey;
 }
-.back img{
-	width: 30px;
-	border-radius: 100%;  
-    border:1px black solid;
+#back:hover{
+    color: grey;
 }
 @media screen and (max-width: 800px){
-	.main .sqr div{
+	html,
+	body{  
+   		height: 250%;
+	}
+	.main div{
 		width: 25%;
 		margin: 30px 0 0 6.25%;
 	}
-	.header div img {
+	header div img {
     	width: 50px;  
     }
     .header_d div img {
@@ -124,5 +125,7 @@ body{
    .logo img {
     	margin: 20px 0 0 14px;
     }
+    #back{	
+	    left: 86%;
+	}
 }
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
