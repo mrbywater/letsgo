@@ -123,7 +123,8 @@ header div img{
    		height: 40px;
 	}
    .logo img {
-    	margin: 20px 0 0 14px;
+    	margin: 20px 0 0 10px;
+    	width: 50px;
     }
     #back{	
 	    left: 86%;
