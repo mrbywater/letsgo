@@ -7,6 +7,15 @@
 </head>
 <body>
 	<div class="page">
+		<!-- расположи переключатели вкладок таким образом, чтоб они были на одной линии с колонками категорий
+		то есть, чтоб все было выравнено одно к другому, к примеру
+		OLX			BESPLATKA
+		Luffy		Zoro
+		Nami		Sanji
+		Robin 		Frenky
+
+		подсказка - для этого нужно будет задать похожие стили и для div'ов из header_d
+		и для div'ов из main, подумай, как лучше это прописать в css файле -->
 		<header> 
 		    <div class="logo">
 	    		<img src="img\10.png">
@@ -33,7 +42,7 @@
 			</div>	
 		</header>
 		<div class="main">
-		<div>
+			<div>
 		  		<img src="img\1.png">
 		  		<span><br>Luffy</span>
 		  	</div>
@@ -141,14 +150,17 @@
 				<img src="img\9.png">
 				<span><br>Brook</span>
 			</div>	
+
+			<!-- сделай кнопку направленную вниз + стилизуй ее без использования id и div'а-обертки 
+				тег i является строчным, каким свойством его можно сделать блочным и как обойтись без div'a обертки? -->
 			<div id="back">
-				<i class="fas fa-chevron-up"></i>
+				<i class="fas fa-chevron-down"></i>
 			</div>	
 		</div>	
 	</div>	
-		<footer>
-			Odessa2022
-		</footer> 		   
+	<footer>
+		Odessa2022
+	</footer> 		   
     <!-- <script src="app.js"></script>  -->
 </body>
 </html>

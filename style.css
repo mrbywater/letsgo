@@ -6,13 +6,17 @@
 }
 html,
 body{  
+	/*нет, просто нет :D , убирай*/
     height: 185%;
 }
+/* этот див избыточен, он не нужен, убираем*/
 .page{	
 	min-height: 100%;
 }
 .main{
 	width: 90%;
+	/* краткая запись устаналивает отступы в следующем порядке верх, право, низ, лево,
+	зачем здесь отступ в 5 процентов только слева? ответ сюда в коммент плз*/
 	margin: 0 0 0 5%;	
 	padding-bottom: 40px;
 }
@@ -38,6 +42,7 @@ body{
 	border:2px #EC0000 solid;
 	margin: 35px 0 20px 0;		
 }
+
 header{
 	height: 100px;
 	background-color: #FF962D;	
@@ -47,6 +52,7 @@ footer{
     background-color: #FF962D;
 	color: white;
 	text-align: center;
+	/* эта конструкция тоже не совсем ясна )*/
 	padding-top: 20px;
 	margin-top: -40px;
 }
@@ -75,6 +81,7 @@ header div img{
 .header_d a:active{
 	color: #EC0000;
 	opacity: 0.8;
+	/* зачем установлено margin-top для псевдокласса?*/
 	margin-top: 0;	
 }
 .header_d div{
@@ -90,9 +97,14 @@ header div img{
 	width: 40px;
 	height: 40px;		
 }
+
+/* почему вместо класса здесь id? оно работает, согласен, но зачем?)*/
 #back{	
 	background-color: white;
     position: absolute;
+
+    /*зачем задавать отступ слева в процентах, если можно явным образом проставть отступ справа в пикселях? 
+    к примеру, пусть отступает справа на 50 px, а от нижнего края страницы на 200*/
     left: 80%;
     border-radius: 100%;
     border:2px grey solid;
@@ -100,16 +112,22 @@ header div img{
     padding-top: 4px;    
     height: 31px;
 }
+
+/*и эта конструкция мне не совсем ясна, что она делает? ответь тут же в комменте плз*/
 #back i{
 	color: grey;
 }
 #back:hover{
     color: grey;
 }
+
 @media screen and (max-width: 800px){
 	html,
 	body{  
+		/*то же самое, нет, что-то тут явно не так)*/
    		height: 250%;
+
+
 	}
 	.main div{
 		width: 25%;
@@ -127,6 +145,7 @@ header div img{
     	width: 50px;
     }
     #back{	
+    	/*то же самое, зачем проценты? */
 	    left: 86%;
 	}
 }
