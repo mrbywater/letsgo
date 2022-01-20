@@ -5,6 +5,7 @@
 	font-family: 'Nunito', sans-serif; 
 }
 .main{
+	/*я сделал ширину 90% и оступил слева 5%, чтобы блок был по центру*/
 	width: 90%;
 	margin: 0 0 0 5%;	
 	padding-bottom: 40px;
