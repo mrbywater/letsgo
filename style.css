@@ -4,17 +4,11 @@
 	padding: 0;
 	font-family: 'Nunito', sans-serif; 
 }
-html,
-body{  
-    height: 185%;
-}
-.page{	
-	min-height: 100%;
-}
 .main{
 	width: 90%;
 	margin: 0 0 0 5%;	
 	padding-bottom: 40px;
+	min-height: 300vh;
 }
 .main div{	
 	float: left;
@@ -42,13 +36,13 @@ header{
 	height: 100px;
 	background-color: #FF962D;	
 }
-footer{
+footer{	
 	height: 40px;
     background-color: #FF962D;
 	color: white;
 	text-align: center;
 	padding-top: 20px;
-	margin-top: -40px;
+	margin-top: 50px;
 }
 .logo{
 	float: left;
@@ -63,7 +57,7 @@ header div img{
 }
 .header_d{
 	float: left;
-	width: 90%; 
+	width: 81%; 
 	text-align: center;   
 }
 .header_d a{
@@ -74,8 +68,7 @@ header div img{
 }
 .header_d a:active{
 	color: #EC0000;
-	opacity: 0.8;
-	margin-top: 0;	
+	opacity: 0.8;	
 }
 .header_d div{
 	float: left;
@@ -90,26 +83,22 @@ header div img{
 	width: 40px;
 	height: 40px;		
 }
-#back{	
-	background-color: white;
+i{	
+	display: inline-block;    
     position: absolute;
-    left: 80%;
+    right: 100px;
+    bottom: 570px;
     border-radius: 100%;
-    border:2px grey solid;
-    width: 35px;
-    padding-top: 4px;    
-    height: 31px;
-}
-#back i{
-	color: grey;
-}
-#back:hover{
+    border: 2px grey solid;
+    width: 30px;
+    text-align: center;
+    padding-top: 8px;
+    height: 22px;
     color: grey;
 }
 @media screen and (max-width: 800px){
-	html,
-	body{  
-   		height: 250%;
+	.main{
+		min-height: 545vh;
 	}
 	.main div{
 		width: 25%;
@@ -118,6 +107,9 @@ header div img{
 	header div img {
     	width: 50px;  
     }
+    .header_d{		
+		width: 83%; 	
+	}
     .header_d div img {
    		width: 40px;
    		height: 40px;
@@ -126,7 +118,8 @@ header div img{
     	margin: 20px 0 0 10px;
     	width: 50px;
     }
-    #back{	
-	    left: 86%;
+    i{	
+	   right: 9px;
+       bottom: 213px;
 	}
 }
