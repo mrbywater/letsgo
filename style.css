@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif; 
+}
+
+/*старайся, чтоб связанные между собой стили были рядом, а не разбросаны по всему файлу*/
+header{
+	height: 100px;
+	background-color: #FF962D;	
+}
+
+header img{	
+    border-radius: 100%;
+}
+
+.header-cont{
+	float: left;
+	width: 81%; 
+	text-align: center;   
+}
+.header-link{
+	text-decoration: none;
+	font-size: 25px;
+    color: white; 
+    padding-top: 10px;
+}
+.header-link:active{
+	color: #EC0000;
+	opacity: 0.8;	
+}
+
+.header-button{
+	float: left;
+	width: 33.33333%;	
+	height: 90px;
+	padding-top: 10px;		
+}
+
+.header-button:hover{
+	background-color: #FFAA5A;	
+}
+
+.header-button img{
+	width: 40px;
+	height: 40px;		
+}
+
+.logo{
+	float: left;
+	width: 10%;			
+}
+.logo img{
+	margin: 14px 0 0 40px;
+	width: 70px;
+}
+
+footer{	
+	height: 50px;
+    background-color: #FF962D;
+    color: white;
+    line-height: 50px;
+    text-align: center;    
+    margin-top: 50px;
+}
+
+
+.main{	
+	width: 90%;   
+    margin: 0 auto;
+    padding-bottom: 40px;
+    /*
+		здесь что-то не так с высотой,
+		кого-то ты не учел на странице,
+		представь, что контента нет и тебе нужно видеть в теле одного экрана
+		хедер и футер без прокрутки
+    */
+    min-height: 100vh;
+    overflow: auto;
+}
+.main-button{	
+	float: left;
+    width: 17%;
+    height: 200px;
+    border-radius: 5%;
+    border:2px #EC0000 solid;
+    /*как получил 12,25? 13 не будет правильнее?*/
+    /*https://metanit.com/web/html5/6.13.php*/
+    margin:50px 0 0 12.25% ;
+    background-color: #FF962D;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-button:hover{
+	color: #EC0000;	
+}
+
+.main-button img{
+	width: 70px;
+	border-radius: 100%;
+	border:2px #EC0000 solid;
+	margin: 35px 0 20px 0;		
+}
+
+
+
+/*
+	стили отработают как надо, но правильно ли задавать всем тегам i одинаковые стили?
+	если я сейчас в любом месте надумаю добавить еще один тег i, то у меня получится такая же кнопка.
+	для этого и существуют классы, используй их
+*/
+i{	
+	position: fixed;
+	/*
+		в который раз я даю тебе четкие цифры для отступов, но ты ставишь свои,
+		буду бить палкой,цитирую:
+		"2) кнопку расположить от дна на 200 пикселей, справа на 50"
+	
+	*/
+    right: 80px;
+    bottom: 60px;
+    border-radius: 100%;
+    border: 2px #FF962D solid;
+    width: 30px;
+    text-align: center;
+    padding-top: 8px;
+    height: 22px;
+    color: #FF962D;
+}
+i:hover{
+	color: #EC0000;
+	border-color: #EC0000;
+}
+/*со спрайтом что-то пошло не так? :)*/
+.bg-1 {
+    width: 156px; height: 155px;
+    background: url('img/css_sprites.png') -828px -477px;
+}
+
+/*ты проверял, работают твои стили для других экранов?*/
+
+@media screen and (max-width: 800px){
+	.main{
+		min-height: 545vh;
+	}
+	.main-button{
+		width: 25%;
+		margin: 30px 0 0 6.25%;
+	}
+	.header-button img {
+    	width: 50px;  
+    }
+    .header-cont{		
+		width: 83%; 	
+	}
+    .header-button img {
+   		width: 40px;
+   		height: 40px;
+	}
+   .logo img {
+    	margin: 20px 0 0 10px;
+    	width: 50px;
+    }
+    i{	
+	   right: 9px;
+       bottom: 55px;
+	}
+}

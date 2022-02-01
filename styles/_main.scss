@@ -2,7 +2,7 @@
 	width: 90%;   
     margin: 0 auto;
     padding-bottom: 40px;
-    min-height: 68vh;
+    min-height: calc(100vh - 240px);
     overflow: auto;
 }
 .main-button{	
