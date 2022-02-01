@@ -1,0 +1,56 @@
+.bg-1 {
+    width: 156px; height: 155px;
+    background: url('img/css_sprites.png') -1785px -633px;
+}
+.bg-2 {
+    width: 157px; height: 154px;
+    background: url('img/css_sprites.png') -1686px -860px;
+}
+.bg-3 {
+    width: 159px; height: 168px;
+    background: url('img/css_sprites.png') -1624px -633px;
+}
+.bg-4 {
+    width: 157px; height: 152px;
+    background: url('img/css_sprites.png') -1203px -1028px;
+}
+.bg-5 {
+    width: 157px; height: 156px;
+    background: url('img/css_sprites.png') -1527px -860px;
+}
+.bg-6 {
+    width: 160px; height: 166px;
+    background: url('img/css_sprites.png') -1203px -860px;
+}
+.bg-7 {
+    width: 158px; height: 150px;
+    background: url('img/css_sprites.png') -1362px -1028px;
+}
+.bg-8 {
+    width: 159px; height: 141px;
+    background: url('img/css_sprites.png') -1522px -1028px;
+}
+.bg-9 {
+    width: 160px; height: 161px;
+    background: url('img/css_sprites.png') -1365px -860px;
+}
+.bg-10 {
+    width: 192px; height: 192px;
+    background: url('img/css_sprites.png') -1430px -633px;
+}
+.bg-arrow {
+    width: 1200px; height: 1200px;
+    background: url('img/css_sprites.png') -1px -1px;
+}
+.bg-logo1 {
+    width: 600px; height: 600px;
+    background: url('img/css_sprites.png') -1px -1203px;
+}
+.bg-logo2 {
+    width: 225px; height: 225px;
+    background: url('img/css_sprites.png') -1203px -633px;
+}
+.bg-logo3 {
+    width: 738px; height: 630px;
+    background: url('img/css_sprites.png') -1203px -1px;
+}
