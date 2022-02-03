@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-$maincolor: #FF962D;
-$red: #EC0000;
-
+@import 'variables';
+@import 'arrow';
 @import 'header';
 @import 'main';
 @import 'footer';
@@ -14,26 +12,16 @@ $red: #EC0000;
 @media screen and (max-width: 800px){
 	.main{
 		min-height: 100vh;
-	}
-	.main-button{
-		width: 25%;
-		margin: 30px 0 0 6.25%;
-	}
-	.header-button img {
-    	width: 50px;  
-    }
+	
+		.main-button{
+			width: 25%;
+			margin: 30px 0 0 6.25%;
+		}
+	}	
     .header-cont{		
 		width: 81%;
     	margin-left: 3%;
-	}
-    .header-button img {
-   		width: 40px;
-   		height: 40px;
-	}
-   .logo img {
-    	margin: 20px 0 0 10px;
-    	width: 50px;
-    }
+	}    
     .arrow-down{	
 	   right: 9px;
        bottom: 55px;

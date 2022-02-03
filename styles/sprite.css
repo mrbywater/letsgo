@@ -1,56 +1,105 @@
 .bg-1 {
-    width: 156px; height: 155px;
-    background: url('img/css_sprites.png') -1785px -633px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -156px -1px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-2 {
-    width: 157px; height: 154px;
-    background: url('img/css_sprites.png') -1686px -860px;
+    width: 153px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -1px -1px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-3 {
-    width: 159px; height: 168px;
-    background: url('img/css_sprites.png') -1624px -633px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -1px -153px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-4 {
-    width: 157px; height: 152px;
-    background: url('img/css_sprites.png') -1203px -1028px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -153px -153px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-5 {
-    width: 157px; height: 156px;
-    background: url('img/css_sprites.png') -1527px -860px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -308px -1px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-6 {
-    width: 160px; height: 166px;
-    background: url('img/css_sprites.png') -1203px -860px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -308px -153px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-7 {
-    width: 158px; height: 150px;
-    background: url('img/css_sprites.png') -1362px -1028px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -1px -305px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-8 {
-    width: 159px; height: 141px;
-    background: url('img/css_sprites.png') -1522px -1028px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -153px -305px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-9 {
-    width: 160px; height: 161px;
-    background: url('img/css_sprites.png') -1365px -860px;
+    width: 150px; height: 150px;
+    background: url('D:/Work/img/css_sprites.png') -305px -305px;
+    transform: scale(0.5);
+    margin: 0 auto -20px;
+    border-radius: 100%;
+    border: 3px #EC0000 solid;
 }
 .bg-10 {
-    width: 192px; height: 192px;
-    background: url('img/css_sprites.png') -1430px -633px;
-}
-.bg-arrow {
-    width: 1200px; height: 1200px;
-    background: url('img/css_sprites.png') -1px -1px;
+    width: 100px; height: 100px;
+    background: url('D:/Work/img/css_sprites.png') -460px -1px;
+    transform: scale(0.6);
+    margin: 0 auto 0;
+    border-radius: 100%;
 }
 .bg-logo1 {
-    width: 600px; height: 600px;
-    background: url('img/css_sprites.png') -1px -1203px;
+    width: 100px; height: 100px;
+    background: url('D:/Work/img/css_sprites.png') -460px -103px;
+    transform: scale(0.4);
+    margin: -25px auto -25px;
+    border-radius: 100%;
 }
 .bg-logo2 {
-    width: 225px; height: 225px;
-    background: url('img/css_sprites.png') -1203px -633px;
+    width: 100px; height: 100px;
+    background: url('D:/Work/img/css_sprites.png') -460px -205px;
+    transform: scale(0.4);
+    margin: -25px auto -25px;
+    border-radius: 100%;
 }
 .bg-logo3 {
-    width: 738px; height: 630px;
-    background: url('img/css_sprites.png') -1203px -1px;
+    width: 100px; height: 100px;
+    background: url('D:/Work/img/css_sprites.png') -460px -307px;
+    transform: scale(0.4);
+    margin: -25px auto -25px;
+    border-radius: 100%;
 }
+@media screen and (max-width: 800px){
+    .bg-10{
+        transform: scale(0.5);
+        margin: 0 0 0 -15px;
+    }

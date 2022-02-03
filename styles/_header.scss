@@ -1,43 +1,45 @@
 header{
 	height: 100px;
 	background-color: $maincolor;	
+
+	.logo{
+		float: left;
+		width: 7%;			
+	}
+
+	.header-cont{
+		float: left;
+   		width: 86%;
+    	text-align: center; 
+
+    	.header-button{
+			float: left;
+			width: 33.33333%;	
+			height: 90px;
+			padding-top: 10px;
+
+			&:hover{
+				background-color: #FFAA5A;	
+			}	
+
+			.header-link{
+				text-decoration: none;
+				font-size: 25px;
+    			color: white; 
+    			padding-top: 10px;
+
+    			&:active{
+					color: $red;
+					opacity: 0.8;	
+				}
+			}	
+		}	
+	}	
 }
-header img{	
-    border-radius: 100%;
-}
-.logo{
-	float: left;
-	width: 7%;			
-}
-.logo img{
-	margin: 15px 0 0 15px;
-    width: 70px;
-}
-.header-cont{
-	float: left;
-    width: 86%;
-    text-align: center;  
-}
-.header-link{
-	text-decoration: none;
-	font-size: 25px;
-    color: white; 
-    padding-top: 10px;
-}
-.header-link:active{
-	color: $red;
-	opacity: 0.8;	
-}
-.header-button{
-	float: left;
-	width: 33.33333%;	
-	height: 90px;
-	padding-top: 10px;		
-}
-.header-button:hover{
-	background-color: #FFAA5A;	
-}
-.header-button img{
-	width: 40px;
-	height: 40px;		
-}	
+
+
+
+
+
+
+

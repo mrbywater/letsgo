@@ -1,0 +1,17 @@
+.arrow-down{    
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+    border-radius: 100%;
+    border: 2px $maincolor solid;
+    width: 30px;
+    text-align: center;
+    padding-top: 8px;
+    height: 22px;
+    color: $maincolor;
+    
+    &:hover{
+        color: $red;
+        border-color: $red;
+    }
+}

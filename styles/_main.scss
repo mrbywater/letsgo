@@ -4,43 +4,23 @@
     padding-bottom: 40px;
     min-height: calc(100vh - 240px);
     overflow: auto;
-}
-.main-button{	
-	float: left;
-    width: 17%;
-    height: 200px;
-    border-radius: 5%;
-    box-sizing: border-box;
-    border: 2px $red solid;
-    margin: 50px 8% 0 8%;
-    background-color: $maincolor;
-    text-align: center;
-    font-size: 23px;
-    color: white;
-    cursor: pointer;
-}
-.main-button:hover{
-	color: #EC0000;	
-}
-.main-button img{
-	width: 70px;
-	border-radius: 100%;
-	border:2px $red solid;
-	margin: 35px 0 20px 0;		
-}
-.arrow-down{    
-    position: fixed;
-    right: 50px;
-    bottom: 200px;
-    border-radius: 100%;
-    border: 2px $maincolor solid;
-    width: 30px;
-    text-align: center;
-    padding-top: 8px;
-    height: 22px;
-    color: $maincolor;
-}
-.arrow-down:hover{
-    color: $red;
-    border-color: $red;
+
+    .main-button{	
+        float: left;
+        width: 17%;
+        height: 200px;
+        border-radius: 5%;
+        box-sizing: border-box;
+        border: 2px $red solid;
+        margin: 50px 8% 0 8%;
+        background-color: $maincolor;
+        text-align: center;
+        font-size: 23px;
+        color: white;
+        cursor: pointer;
+
+        &:hover{   
+            color: #EC0000; 
+        }           
+    }
 }
