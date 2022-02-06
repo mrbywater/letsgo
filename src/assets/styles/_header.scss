@@ -4,9 +4,20 @@ header{
 
 	.logo{
 		float: left;
-		width: 7%;			
-	}
+		width: 7%;	
 
+		[class|="bg"]{
+			background-image: url('../img/css_sprites.png');
+			transform: scale(0.6);
+    		margin: 0 auto 0;
+    		border-radius: 100%;
+		}
+
+		&:hover{
+        	transform: rotate(180deg);
+		}		
+	}
+	
 	.header-cont{
 		float: left;
    		width: 86%;
@@ -20,7 +31,14 @@ header{
 
 			&:hover{
 				background-color: #FFAA5A;	
-			}	
+			}
+
+		[class|="bg"]{
+			background-image: url('../img/css_sprites.png');
+			transform: scale(0.4);
+   			margin: -25px auto -25px;
+   			border-radius: 100%;
+		}		
 
 			.header-link{
 				text-decoration: none;

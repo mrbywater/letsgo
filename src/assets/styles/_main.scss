@@ -20,7 +20,16 @@
         cursor: pointer;
 
         &:hover{   
-            color: #EC0000; 
+            color: $red; 
+            transform: scale(1.1);            
+        }
+
+        [class|="bg"]{
+            background-image: url('../img/css_sprites.png');
+            transform: scale(0.5);
+            margin: 0 auto -20px;
+            border-radius: 100%;
+            border: 3px #EC0000 solid;
         }           
     }
 }
