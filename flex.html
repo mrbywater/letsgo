@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="src/assets/styles/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/sprite.css"> -->
+	<script src="https://kit.fontawesome.com/99481708ee.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		label{
+			background: red;
+		    width: 100px;
+		    height: 50px;
+		    display: inline-block;
+		    margin:10px 10px;
+		    padding: 10px;
+		}
+
+		input{
+			margin-right:10px;
+		}
+
+		
+		.wrapper{
+			min-height: calc(100vh - 150px);
+			width:90%;
+			margin:0 auto;
+			background: green;
+			transition:all 2s;
+			position: relative;
+			max-height: 100%;
+			overflow: hidden;
+		}
+
+
+
+		.wrapper > .test:nth-child(even){
+			background: lightblue;
+			/*height:100px;*/
+			width:200px;
+		}
+		.wrapper > .test:nth-child(odd){
+			background: yellow;
+			/*height:200px;*/
+			width:100px;
+		}
+
+		.block:checked + .wrapper{
+			display: block;
+		}
+		.flex:checked ~ .wrapper{
+			
+			display: flex;
+		}
+		.flex-row:checked ~ .wrapper{
+			
+			flex-direction:row;
+		}
+		.flex-column:checked ~ .wrapper{
+			
+			flex-direction:column;
+		}
+
+		.main-axis,.cross-axis{
+			position: absolute;
+			background: red;
+			text-align: center;
+			font-size:20px;
+			color:red;
+
+		}
+		.main-axis{
+			width:100%;
+			height:2px;
+			top:50%;
+		}
+		.cross-axis{
+			width:100%;
+			height:2px;
+			top:40%;
+			transform: rotate(-90deg);
+
+		}
+
+
+
+		
+	</style>
+</head>
+<body>	
+	<header> 
+	    <div class="logo">
+    		<div class="bg-10"></div>
+   	    </div> 
+		<div class="header-cont">	
+			<div class="header-button">					
+				<a class="header-link" href="1.html" >				
+					<div class="bg-logo1"></div>
+					<span>OLX</span>				
+				</a>	
+			</div>	
+			<div class="header-button">		
+				<a class="header-link" href="2.html">				
+				    <div class="bg-logo2"></div>
+					<span>BESPLATKA</span>					
+				</a>	
+			</div>	
+			<div class="header-button">		
+				<a class="header-link" href="3.html">				
+					<div class="bg-logo3"></div>
+					<span>DOMRIA</span>					
+				</a>	
+			</div>						
+		</div>	
+	</header>	
+	<input class="block"  type="checkbox" /><span>block</span>
+	<input class="flex" type="checkbox" /><span>flex</span>
+	<input class="flex-row" type="checkbox" /><span>flex-row</span>
+	<input class="flex-column" type="checkbox" /><span>flex-column</span>
+	
+	
+	<div class="wrapper">
+		<div class="main-axis">main axis</div>
+		<div class="cross-axis">cross axis</div>
+			<div class="test">1</div>
+			<div class="test">2</div>
+			<div class="test">3</div>
+			<div class="test">4</div>
+	</div>			
+	<footer>
+		Odessa2022
+	</footer> 		   
+    <!-- <script src="app.js"></script>  -->
+</body>
+</html>
