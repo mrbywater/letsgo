@@ -49,9 +49,4 @@
 .bg-logo3 {
     width: 100px; height: 100px;
     background: url('D:/Work/img/css_sprites.png') -460px -307px;    
-}
-@media screen and (max-width: 800px){
-    .bg-10{
-        transform: scale(0.5);
-        margin: 0 0 0 -15px;
-    }
+}    

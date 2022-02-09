@@ -1,14 +1,14 @@
 header{
 	height: 100px;
-	background-color: $maincolor;	
+	background-color: $maincolor;
+	display: flex;	
 
 	.logo{
-		float: left;
-		width: 7%;	
+		flex: 1;	
 
 		[class|="bg"]{
 			background-image: url('../img/css_sprites.png');
-			transform: scale(0.6);
+			transform: scale(0.5);
     		margin: 0 auto 0;
     		border-radius: 100%;
 		}
@@ -19,37 +19,46 @@ header{
 	}
 	
 	.header-cont{
-		float: left;
-   		width: 86%;
-    	text-align: center; 
+		display: flex;
+    	justify-content: space-around;
+        margin-right: 6%;
+    	text-align: center;
+    	flex: 11;   	
 
-    	.header-button{
-			float: left;
-			width: 33.33333%;	
+    	.header-button{				
 			height: 90px;
 			padding-top: 10px;
+			transition: .2s;
 
 			&:hover{
-				background-color: #FFAA5A;	
+				background-color: #FF9F44;	
 			}
 
-		[class|="bg"]{
-			background-image: url('../img/css_sprites.png');
-			transform: scale(0.4);
-   			margin: -25px auto -25px;
-   			border-radius: 100%;
-		}		
+			&:active, &:focus{
+				background-color: #FFA958;	
+			}
+
+			&:nth-child(2){
+    			margin: 0 25px 0 40px;
+    			width: 180px;
+    		} 
+
+    		&:nth-child(3){    			
+    			width: 140px;
+    		}
+
+			[class|="bg"]{
+				background-image: url('../img/css_sprites.png');
+				transform: scale(0.35);
+   				margin: -25px auto -25px;
+   				border-radius: 100%;
+			}		
 
 			.header-link{
 				text-decoration: none;
 				font-size: 25px;
     			color: white; 
-    			padding-top: 10px;
-
-    			&:active{
-					color: $red;
-					opacity: 0.8;	
-				}
+    			padding-top: 10px;    			
 			}	
 		}	
 	}	

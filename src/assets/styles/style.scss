@@ -11,20 +11,26 @@
 	font-family: 'Nunito', sans-serif; 
 }
 @media screen and (max-width: 800px){
-	.main{		
-		.main-button{
-			width: 25%;
-			margin: 30px 0 0 6.25%;
-		}
+	.main{
+		.button-cont{	
+			.main-button{
+				width: 160px;
+			}
+		}					
 	}
-	header{		
-    	.header-cont{		
-			width: 81%;
-    		margin-left: 3%;
-		} 
-	}	   
+
     .arrow-down{	
 	   right: 9px;
        bottom: 55px;
 	}
+	
+    header{
+		.logo{
+			width: 80px;			
+		}
+
+		.header-cont{
+			margin-right: 8%;
+		}
+	}	
 }
