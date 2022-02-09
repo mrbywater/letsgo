@@ -4,6 +4,7 @@ header{
 	display: flex;	
 
 	.logo{
+
 		flex: 1;	
 
 		[class|="bg"]{
@@ -19,8 +20,11 @@ header{
 	}
 	
 	.header-cont{
+
 		display: flex;
     	justify-content: space-around;
+
+    	//зачем тут отступ?
         margin-right: 6%;
     	text-align: center;
     	flex: 11;   	
@@ -29,7 +33,7 @@ header{
 			height: 90px;
 			padding-top: 10px;
 			transition: .2s;
-
+			background-color:red;
 			&:hover{
 				background-color: #FF9F44;	
 			}
@@ -37,7 +41,7 @@ header{
 			&:active, &:focus{
 				background-color: #FFA958;	
 			}
-
+			//зачем здесь псевдоклассы? ширина твоих вкладок должна быть одинаковой
 			&:nth-child(2){
     			margin: 0 25px 0 40px;
     			width: 180px;
