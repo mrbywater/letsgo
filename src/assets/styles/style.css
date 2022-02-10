@@ -18,9 +18,11 @@
 header {
   height: 100px;
   background-color: #FF962D;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   header .logo {
-    flex: 1; }
+    position: absolute;
+    left: -15px; }
     header .logo [class|="bg"] {
       background-image: url("../img/css_sprites.png");
       transform: scale(0.5);
@@ -30,23 +32,18 @@ header {
       transform: rotate(180deg); }
   header .header-cont {
     display: flex;
+    width: 90%;
     justify-content: space-around;
-    margin-right: 6%;
-    text-align: center;
-    flex: 11; }
+    text-align: center; }
     header .header-cont .header-button {
-      height: 90px;
-      padding-top: 10px;
+      height: 93px;
+      width: 25%;
+      padding-top: 7px;
       transition: .2s; }
       header .header-cont .header-button:hover {
         background-color: #FF9F44; }
       header .header-cont .header-button:active, header .header-cont .header-button:focus {
         background-color: #FFA958; }
-      header .header-cont .header-button:nth-child(2) {
-        margin: 0 25px 0 40px;
-        width: 180px; }
-      header .header-cont .header-button:nth-child(3) {
-        width: 140px; }
       header .header-cont .header-button [class|="bg"] {
         background-image: url("../img/css_sprites.png");
         transform: scale(0.35);
@@ -57,12 +54,15 @@ header {
         font-size: 25px;
         color: white;
         padding-top: 10px; }
+        header .header-cont .header-button .header-link span {
+          display: block;
+          padding-bottom: 14px; }
 
 .main {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 40px;
-  min-height: calc(100vh - 240px);
+  padding-bottom: 70px;
+  min-height: calc(100vh - 220px);
   overflow: auto; }
   .main .button-cont {
     display: flex;
@@ -94,8 +94,7 @@ footer {
   background-color: #FF962D;
   color: white;
   line-height: 50px;
-  text-align: center;
-  margin-top: 50px; }
+  text-align: center; }
 
 * {
   margin: 0;
@@ -111,8 +110,6 @@ footer {
     bottom: 55px; }
 
   header .logo {
-    width: 80px; }
-  header .header-cont {
-    margin-right: 8%; } }
+    left: -20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,13 @@
 header{
 	height: 100px;
-	background-color: $maincolor;
-	display: flex;	
+    background-color: #FF962D;
+    display: flex;
+    justify-content: center;
 
 	.logo{
 
-		flex: 1;	
+		position: absolute;
+    	left: -15px;
 
 		[class|="bg"]{
 			background-image: url('../img/css_sprites.png');
@@ -22,18 +24,16 @@ header{
 	.header-cont{
 
 		display: flex;
+    	width: 90%;
     	justify-content: space-around;
-
-    	//зачем тут отступ?
-        margin-right: 6%;
-    	text-align: center;
-    	flex: 11;   	
+    	text-align: center;   	
 
     	.header-button{				
-			height: 90px;
-			padding-top: 10px;
-			transition: .2s;
-			background-color:red;
+			height: 93px;
+    		width: 25%;    
+    		padding-top: 7px;
+    		transition: .2s;
+			
 			&:hover{
 				background-color: #FF9F44;	
 			}
@@ -41,16 +41,7 @@ header{
 			&:active, &:focus{
 				background-color: #FFA958;	
 			}
-			//зачем здесь псевдоклассы? ширина твоих вкладок должна быть одинаковой
-			&:nth-child(2){
-    			margin: 0 25px 0 40px;
-    			width: 180px;
-    		} 
-
-    		&:nth-child(3){    			
-    			width: 140px;
-    		}
-
+			
 			[class|="bg"]{
 				background-image: url('../img/css_sprites.png');
 				transform: scale(0.35);
@@ -62,7 +53,12 @@ header{
 				text-decoration: none;
 				font-size: 25px;
     			color: white; 
-    			padding-top: 10px;    			
+    			padding-top: 10px; 
+
+    			span{
+    				display: block;
+    				padding-bottom: 14px;
+    			}   			
 			}	
 		}	
 	}	
